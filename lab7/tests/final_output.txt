@@ -1,0 +1,110 @@
+
+	LABEL		Offset 	 LEVEL 	 type
+	_t6		18		2	0
+	_t5		17		2	0
+	_t4		16		2	0
+	_t3		15		2	0
+	_t2		14		2	0
+	_t1		13		2	0
+	_t0		12		2	0
+	x		2		2	0
+	y		1		1	0
+	b		0		1	0
+	f		0		0	0
+	Z		1		0	0
+	y		0		0	0
+
+	LABEL		Offset 	 LEVEL 	 type
+	_t13		18		2	0
+	_t12		17		2	0
+	_t11		16		2	0
+	_t10		15		2	0
+	_t9		14		2	0
+	_t8		13		2	0
+	_t7		12		2	0
+	x		2		2	0
+	y		1		1	0
+	b		0		1	0
+	f		0		0	0
+	Z		1		0	0
+	y		0		0	0
+
+	LABEL		Offset 	 LEVEL 	 type
+	y		1		1	0
+	b		0		1	0
+	f		0		0	0
+	Z		1		0	0
+	y		0		0	0
+
+Finished Parsing
+
+
+
+	LABEL		Offset 	 LEVEL 	 type
+	z		101		0	0
+	f		19		0	0
+	Z		1		0	0
+	y		0		0	0
+
+
+AST PRINT 
+
+Variable INT y  level 0 offset 0
+Variable INT Z[100]  level 0 offset 1
+Function  INT f level 0 offset 19
+ Parameter INT b level 1 offset 0
+ Compund Statement 
+  Variable INT y  level 1 offset 1
+  Compund Statement 
+   Variable INT x[10]  level 2 offset 2
+   ASSIGMENT STATEMENT 
+    VARIABLE x level 2  offset 2
+     [
+      EXPRESSION operator MINUS
+       EXPRESSION operator PLUS
+        NUMBER value 2 
+        NUMBER value 3 
+       NUMBER value 5 
+     ]
+   is assigned  
+    EXPRESSION operator PLUS
+     VARIABLE b level 1  offset 0
+     CALL STATEMENT  function f
+      (
+       CALL argument  
+        EXPRESSION operator PLUS
+         NUMBER value 5 
+         EXPRESSION operator TIMES
+          VARIABLE x level 2  offset 2
+           [
+            NUMBER value 2 
+           ]
+          VARIABLE b level 1  offset 0
+      )
+  Compund Statement 
+   Variable INT x[10]  level 2 offset 2
+   ASSIGMENT STATEMENT 
+    VARIABLE x level 2  offset 2
+     [
+      EXPRESSION operator MINUS
+       EXPRESSION operator PLUS
+        NUMBER value 2 
+        NUMBER value 3 
+       NUMBER value 5 
+     ]
+   is assigned  
+    EXPRESSION operator PLUS
+     VARIABLE b level 1  offset 0
+     CALL STATEMENT  function f
+      (
+       CALL argument  
+        EXPRESSION operator PLUS
+         NUMBER value 5 
+         EXPRESSION operator TIMES
+          VARIABLE x level 2  offset 2
+           [
+            NUMBER value 2 
+           ]
+          VARIABLE b level 1  offset 0
+      )
+Variable INT z  level 0 offset 101
